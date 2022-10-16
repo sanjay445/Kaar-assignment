@@ -1,0 +1,9 @@
+<!-- <div class="card"> -->
+<img style=" border-radius: 20%;" width="300" height="300" src="{{fooddata.img}}">
+<!-- </div> -->
+<h1>{{fooddata.name}}</h1>
+<h3>$:{{fooddata.price | price}}</h3>
+<!-- <h3>Rs:{{fooddata.price?fooddata.price:"-"}}</h3> -->
+<button style="margin-right: 1%;" type="button" class="btn btn-secondary" (click)="showDescription(fooddata.desc)">Description</button>
+<button style="margin-right: 1%;" type="button" class="btn btn-primary" (click)="showOffers()">Offers</button>
+<!-- {{fooddata | json}}  -->

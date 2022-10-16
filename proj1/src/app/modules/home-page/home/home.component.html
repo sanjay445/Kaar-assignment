@@ -1,0 +1,9 @@
+<nav mat-tab-nav-bar  [tabPanel]="tabPanel">
+    <a mat-tab-link *ngFor="let app of navMenu"
+     (click)="activeLink = app.link"
+      [routerLink]="app.link" 
+      [active]="activeLink == app.link">
+        {{app.lable}} </a>
+</nav>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
+<router-outlet></router-outlet>
